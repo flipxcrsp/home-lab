@@ -69,6 +69,9 @@ I am actively building a home cybersecurity lab focused on network monitoring, a
 I regularly work with **Linux (Pop!_OS)** and **Windows**, and I’m expanding my awareness of **macOS security practices** to maintain versatility across environments. While I don’t actively use macOS hardware, I study its structure, permissions, and logs to stay well-rounded.
 
 ---
+## 🖼️ Network Diagram
+
+![Home Lab Network Diagram](network-diagram.png)
 
 ## 📁 Repo Structure (Planned)
 ```
