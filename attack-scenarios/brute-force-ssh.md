@@ -69,6 +69,6 @@ sshd[5962]: Failed password for msfadmin from 192.168.68.58 port 38618 ssh2
 
 ### 🖼️ Screenshot
 
-![Brute-force demo](../medusa-ssh-brute.png)
+![Brute-force demo](../screenshots/medusa-ssh-brute.png)
 
 *A full view of Kali attacking while Metasploitable logs real-time SSH failures*
