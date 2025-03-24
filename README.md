@@ -89,6 +89,14 @@ home-lab/
     ├── sql-injection-dvwa.md
     └── reverse-shell-kali.md
 ```
+---
+
+## 📂 Incident Response Case Studies
+
+Real-world issues encountered and resolved during lab setup and experimentation.
+
+- [🧰 SplunkServer Recovery (Disk Full)](incident-response/splunkserver-recovery.md)
+
 
 ---
 
