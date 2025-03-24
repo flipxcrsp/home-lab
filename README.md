@@ -73,22 +73,30 @@ I regularly work with **Linux (Pop!_OS)** and **Windows**, and I’m expanding m
 
 ![Home Lab Network Diagram](network-diagram.png)
 
-## 📁 Repo Structure (Planned)
+## 📁 Repo Structure
+
 ```
 home-lab/
 ├── README.md
 ├── network-diagram.png
+├── screenshots/
+│   └── medusa-ssh-brute.png
 ├── pcaps/
 │   └── traffic-analysis.md
 ├── lab-configs/
 │   ├── kali-notes.md
 │   ├── metasploitable.md
 │   └── splunk-setup.md
-└── attack-scenarios/
-    ├── brute-force-ssh.md
-    ├── sql-injection-dvwa.md
-    └── reverse-shell-kali.md
+├── attack-scenarios/
+│   ├── brute-force-ssh.md
+│   ├── sql-injection-dvwa.md
+│   └── reverse-shell-kali.md
+└── incident-response/
+    ├── splunkserver-recovery.md
+    └── README.md
 ```
+
+
 ---
 
 ## 📂 Incident Response Case Studies
