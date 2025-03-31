@@ -74,7 +74,7 @@ Splunk successfully detected the brute-force attack based on:
 - High volume of attempts over a short time
 - Repeated targeting of the same username from a single source IP
 
-This detection was visualized, documented, and added to the analyst’s portfolio to demonstrate log ingestion, search queries, and basic threat detection using a SIEM.
+This detection was visualized, documented, and added to portfolio to demonstrate log ingestion, search queries, and basic threat detection using a SIEM.
 
 ---
 
