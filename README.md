@@ -1,6 +1,6 @@
 # 🏠 Home Cybersecurity Lab & Network Setup
 
-Welcome to my personal home lab documentation. This project highlights how I’ve designed and segmented my home network to support both secure daily use and an isolated cybersecurity lab environment for learning and hands-on practice.
+Welcome to my personal cybersecurity lab, built for hands-on learning in security operations, detection engineering, and incident response. This project documents how I’ve segmented my home network to isolate lab environments and safely simulate attacks, collect logs, and run detection tooling.
 
 ---
 
@@ -14,67 +14,75 @@ Welcome to my personal home lab documentation. This project highlights how I’v
 | **Lab_Net**  | Cybersecurity lab + IoT       | Guest mode with Device Isolation ON | Eufy security system, Echo Dots, smart plugs/lights, lab VMs, spare laptops |
 
 - **Device Isolation** is enabled on `Lab_Net` to prevent lateral movement.
-- Lab VMs will be connected either through virtual bridged adapters or routed via isolated interfaces.
+- Lab virtual machines are hosted on my Pop!_OS desktop, using bridged or isolated interfaces.
 
 ---
 
 ## 🧪 Lab Environment & Tools
 
-I am actively building a home cybersecurity lab focused on network monitoring, attack simulation, and SIEM/log analysis using free and open-source tools.
+This lab is focused on Blue Team skills — including log ingestion, network traffic inspection, and SIEM integration — while simulating real-world attacks from an attacker VM.
 
-### 🔧 Virtual Machines (Hosted on Pop!_OS desktop)
-- **Kali Linux** – Attacker machine with built-in tools
-- **Metasploitable 2** – Vulnerable target for testing exploits
-- **OWASP Juice Shop / DVWA** – Web app vulnerability practice
-- **Splunk (Free)** – SIEM for log ingestion, analysis, and detection
-- **Ubuntu Server** – Can be used as a log source, firewall, or sensor
+### 🖥️ Virtual Machines
+- **Kali Linux** – Attacker box with standard tools
+- **Metasploitable 2** – Vulnerable target machine
+- **OWASP Juice Shop / DVWA** – Web app vuln practice
+- **Ubuntu Server** – Generic log source or target
+- **Splunk (Free Tier)** – Core SIEM for log correlation
 
-### 🔍 Traffic & Log Analysis
-- **Wireshark** – Packet inspection and filtering
-- **Zeek** *(planned)* – Network traffic logging
-- **Splunk Universal Forwarder** – Log ingestion from other lab machines
-
----
-
-## 🛡️ Security Practices
-
-- All lab environments are isolated from production devices.
-- Using virtual machines enables safe testing, easy snapshots, and fast recovery.
-- Logs are analyzed using Splunk, and packet data is collected with Wireshark for learning network behavior.
-- Future enhancements include implementing IDS/IPS systems (e.g., Suricata or Zeek) and possibly setting up pfSense.
+### 📡 Network Monitoring & Traffic Analysis
+- **Wireshark** – Live packet capture and filtering
+- **Zeek** *(planned)* – Deep traffic logging & scripting
+- **Splunk Universal Forwarder** – Shipping logs from targets
 
 ---
 
-## 📜 Certifications & Learning Goals
+## 🛡️ Security Best Practices
 
-### ✅ Current Certifications
+- Lab network is segmented from production traffic.
+- VMs are snapshot-enabled for fast resets.
+- Brute force and scanning attacks are performed in an isolated setting.
+- Logs are centralized via Splunk, with plans to add Suricata and Zeek for network-level alerting.
+
+---
+
+## 📜 Certifications & Learning Focus
+
+### ✅ Currently Certified
 - CompTIA A+
 - CompTIA Network+
 - CompTIA Security+
 
-### 🎯 In Progress / Future Goals
-- CompTIA CySA+
-- Cisco Certified CyberOps Associate (CCCA)
-- Practical experience with:
-  - SIEM & log correlation
-  - Vulnerability scanning
-  - Hardening techniques (Linux/Windows)
-  - IDS/IPS and threat detection
-  - Cloud & container security
+### 🎯 Immediate Goals
+- Complete SOC Analyst Career Paths (HTB, Cybrary, TryHackMe)
+- Build detection use cases and alerting in Splunk/Wazuh
+- Document attack simulation, log analysis, and response workflows
+
+### 🚀 Future Goals
+- CompTIA CySA+ and Cisco CyberOps Associate (CCCA)
+- Security Engineering or Architect track (post-SOC experience)
+- Cloud security fundamentals (Azure, AWS), container security (Docker)
 
 ---
 
-## 👨‍💻 Cross-Platform Familiarity
+## 💻 Cross-Platform Experience
 
-I regularly work with **Linux (Pop!_OS)** and **Windows**, and I’m expanding my awareness of **macOS security practices** to maintain versatility across environments. While I don’t actively use macOS hardware, I study its structure, permissions, and logs to stay well-rounded.
+- **Daily Driver:** Pop!_OS (Linux)
+- **Lab Systems:** Kali Linux, Ubuntu Server, Windows 10/11, Metasploitable
+- **Learning:** macOS logs and security settings (non-hosted)
+
+I aim to stay adaptable across OS environments, especially where log formats and system behaviors differ.
 
 ---
-## 🖼️ Network Diagram
 
-![Home Lab Network Diagram](network-diagram.png)
+## 🖼️ Home Lab Network Diagram
+
+![Network Diagram](network-diagram.png)
+
+---
 
 ## 📁 Repo Structure
 
+---
 ```
 home-lab/
 ├── README.md
@@ -95,32 +103,34 @@ home-lab/
     ├── splunkserver-recovery.md
     └── README.md
 ```
+---
 
+## 📂 Featured Writeups & Walkthroughs
+
+- 🔓 [Brute Force SSH (Medusa)](attack-scenarios/brute-force-ssh.md)
+- 💾 [Splunk Setup](lab-configs/splunk-setup.md)
+- 🛠️ [Incident: SplunkServer Disk Full Recovery](incident-response/splunkserver-recovery.md)
 
 ---
 
-## 📂 Incident Response Case Studies
+## 🚧 Work in Progress
 
-Real-world issues encountered and resolved during lab setup and experimentation.
+This lab continues to evolve as I:
 
-- [🧰 SplunkServer Recovery (Disk Full)](incident-response/splunkserver-recovery.md)
-
-
----
-
-## 🚧 Work In Progress
-
-This is a living repo that will evolve as I gain experience, build new lab environments, and document my cybersecurity journey.
-
-Stay tuned for:
-- Sample packet captures and attack writeups
-- Screenshots from Splunk dashboards and Wireshark
-- IDS/IPS setups with Zeek or Suricata
-- Lab automation and possible Ansible/Infrastructure-as-Code experiments
+- Add more attack simulations and alert testing
+- Integrate packet captures (pcaps) and dashboard screenshots
+- Deploy Zeek and/or Suricata for enhanced visibility
+- Explore Ansible or IaC to automate VM deployments
 
 ---
 
-## 🤝 Let's Connect
+## 🤝 Connect
 
-Interested in collaborating or have suggestions?  
-Feel free to connect or message me via GitHub!
+Got ideas, feedback, or want to collaborate on lab content?  
+Feel free to connect through [GitHub](https://github.com/flipxcrsp) or [LinkedIn](https://www.linkedin.com/in/phillip5280)
+
+---
+
+**Maintained by [flipxcrsp](https://github.com/flipxcrsp)**  
+*“Documenting the grind, one packet at a time.”*
+
