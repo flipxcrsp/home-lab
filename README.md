@@ -1,4 +1,4 @@
-# 🏠 Home Cybersecurity Lab & Network Setup
+# 🏠 Home Lab & Network Setup
 
 Welcome to my personal cybersecurity lab, built for hands-on learning in security operations, detection engineering, and incident response. This project documents how I’ve segmented my home network to isolate lab environments and safely simulate attacks, collect logs, and run detection tooling.
 
