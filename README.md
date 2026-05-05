@@ -64,7 +64,6 @@ Higher level certs look amazing but my goal it to diversify, dig into tools, and
 - Practice
 
 ### 🚀 Future Goals
-- 
 - Containers (Docker)
 - Cloud fundamentals (Azure, AWS)
 
