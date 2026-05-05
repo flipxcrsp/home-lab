@@ -1,6 +1,6 @@
 # 🏠 Home Lab & Network Setup
 
-Welcome to my personal cybersecurity lab, built for hands-on learning in security operations, detection engineering, and incident response. This project documents how I’ve segmented my home network to isolate lab environments and safely simulate attacks, collect logs, and run detection tooling.
+How I’ve segmented a temporary network to isolate lab environments and safely simulate attacks, collect logs, and run detection tooling.
 
 ---
 
@@ -9,29 +9,29 @@ Welcome to my personal cybersecurity lab, built for hands-on learning in securit
 ### 🔹 Network Segmentation
 
 | Network Name | Purpose                       | Isolation Settings                  | Devices                                                                 |
-|--------------|-------------------------------|--------------------------------------|-------------------------------------------------------------------------|
+|--------------|-------------------------------|--------------------------------------|------------------------------------------------------------------------|
 | **Home_Net** | Trusted main network          | No isolation                         | Pop!_OS desktop, Razer laptop, Lenovo ThinkPad, Android phone, wife's devices, printers, Fire TV, Firesticks |
-| **Lab_Net**  | Cybersecurity lab + IoT       | Guest mode with Device Isolation ON | Eufy security system, Echo Dots, smart plugs/lights, lab VMs, spare laptops |
+| **Lab_Net**  | VirtualBoxes + IoT            | Guest mode with Device Isolation ON | Eufy security system, Dots, smart variety, VMs, break/fix laptops       |
 
 - **Device Isolation** is enabled on `Lab_Net` to prevent lateral movement.
-- Lab virtual machines are hosted on my Pop!_OS desktop, using bridged or isolated interfaces.
+- Virtual machines are hosted on my Pop!_OS desktop, using bridged or isolated interfaces.
 
 ---
 
 ## 🧪 Lab Environment & Tools
 
-This lab is focused on Blue Team skills — including log ingestion, network traffic inspection, and SIEM integration — while simulating real-world attacks from an attacker VM.
+Includes log ingestion, network traffic capture/inspection, SIEM integration — while simulating attacks from an attacker VM.
 
 ### 🖥️ Virtual Machines
 - **Kali Linux** – Attacker box with standard tools
 - **Metasploitable 2** – Vulnerable target machine
-- **OWASP Juice Shop / DVWA** – Web app vuln practice
-- **Ubuntu Server** – Generic log source or target
+- **OWASP Juice Shop / DVWA** – Web app vulns 
+- **Ubuntu Server** – Generic log source/target
 - **Splunk (Free Tier)** – Core SIEM for log correlation
 
 ### 📡 Network Monitoring & Traffic Analysis
 - **Wireshark** – Live packet capture and filtering
-- **Zeek** *(planned)* – Deep traffic logging & scripting
+- **Zeek**  – Deeper traffic logging & scripting
 - **Splunk Universal Forwarder** – Shipping logs from targets
 
 ---
@@ -47,20 +47,26 @@ This lab is focused on Blue Team skills — including log ingestion, network tra
 
 ## 📜 Certifications & Learning Focus
 
-### ✅ Currently Certified
-- CompTIA A+
-- CompTIA Network+
-- CompTIA Security+
+### Certs
+- CompTIA A+ ☑️
+- CompTIA Network+ ☑️
+- CompTIA Security+ ☑️
+
+CompTIA is really great with foundations and I appreciate how straight forward their courses are for any level user.
+Higher level certs look amazing but my goal it to diversify, dig into tools, and then all-in-one platforms.
 
 ### 🎯 Immediate Goals
-- Complete SOC Analyst Career Paths (HTB, Cybrary, TryHackMe)
+- Complete various career-path positions and tools used (HTB, Cybrary, TryHackMe)
 - Build detection use cases and alerting in Splunk/Wazuh
-- Document attack simulation, log analysis, and response workflows
+- Attack simulation, log analysis, and response tools (trials/demos)
+- Identifying varieties and features across platforms: Linux, macOS, Windows
+- Research
+- Practice
 
 ### 🚀 Future Goals
-- CompTIA CySA+ and Cisco CyberOps Associate (CCCA)
-- Security Engineering or Architect track (post-SOC experience)
-- Cloud security fundamentals (Azure, AWS), container security (Docker)
+- 
+- Containers (Docker)
+- Cloud fundamentals (Azure, AWS)
 
 ---
 
@@ -70,7 +76,7 @@ This lab is focused on Blue Team skills — including log ingestion, network tra
 - **Lab Systems:** Kali Linux, Ubuntu Server, Windows 10/11, Metasploitable
 - **Learning:** macOS logs and security settings (non-hosted)
 
-I aim to stay adaptable across OS environments, especially where log formats and system behaviors differ.
+I aim to understand and adapt across OS environments, especially where log formats and system behaviors differ.
 
 ---
 
