@@ -1,6 +1,6 @@
 # 🏠 Home Lab & Network Setup
 
-How I’ve segmented a temporary network to isolate lab environments and safely simulate attacks, collect logs, and run detection tooling.
+Segmented network to isolate lab environments and safely simulate attacks, collect logs, and run detection tooling.
 
 ---
 
